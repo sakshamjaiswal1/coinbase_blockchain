@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import { useWeb3 } from "@3rdweb/hooks";
+import SideBar from "../components/SideBar";
+import Header from "../components/Header";
 export default function Home() {
   const { address, connectWallet } = useWeb3();
   return (
     <Wrapper>
-      <button onClick={() => connectWallet("injected")}>Connect Wallet</button>
+      <SideBar/>
+      
+      <Maincontainer>
+        <Header/>
+      </Maincontainer>
+      {/* <button onClick={() => connectWallet("injected")}>Connect Wallet</button> */}
       </Wrapper>
   );
 }
