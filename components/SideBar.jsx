@@ -31,7 +31,7 @@ const [activeIcon,setActiveIcon]=useState(navItems[0].title)
 
 export default SideBar
 const Wrapper = styled.div`
-  height: calc(100vh - 2rem);
+  height: inherit;
   border-right: 1px solid #282b2f;
   width: calc(22rem - 16px - 16px);
   /* TRouBLe */
